@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class SubArray {
     /**
@@ -13,6 +14,11 @@ public class SubArray {
      * @return a sub-array of nums containing the values between start and end.
      */
     public int[] sub(int[] nums, int start, int end){
-        return null;
+       int subArray[] = new int[nums.length];
+        for(int i=0; i<nums.length; i++){
+            subArray = Arrays.copyOfRange(nums, start, end);
+
+        }
+        return subArray;
     }
 }
